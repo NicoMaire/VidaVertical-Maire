@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <header class="container-fluid">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="./index.html"><img src="../img/imageonline-co-transparentimage.png" alt="" width="150" height="50"></a>
@@ -46,45 +46,44 @@
     </header>
 
     <main>
-    <h1 class="TituloPrincipal">Contacto</h1>
+    <h1 class="TituloPrincipal text-center mt-3">Contacto</h1>
 
-    <form action="archivo.php" method="get">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input name="Nombre">
-        </div>
-      
-        <div>
-            <label for="Apellido">Apellido:</label>
-            <input name="Apellido">
-        </div>
-      
-        <div>
-            <label for="Email">E-Mail:</label>
-            <input type="email" name="Email" id="dirección email">
-        </div>
+    <form action="archivo.php" method="get" class="d-flex justify-content-center align-items-center mx-5 my-5 px-5">
+        <div class="col-3">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput">
+            <label for="floatingInput">Nombre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput">
+            <label for="floatingInput">Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput">
+            <label for="floatingInput">E-mail</label>
+          </div>
         
+          <select class="form-select mb-3" aria-label="Estado civil">
+          <option selected>Estado civil</option>
+          <option value="1">Soltero/a</option>
+          <option value="2">Viudo/a</option>
+          <option value="3">Casado/a</option>
+          </select>
 
-        <select name="Estado Civil" id="Estado Civil">
-            <option value="Soltero/a">Soltero/a</option>
-            <option value="Casado/a">Casado/a</option>
-            <option value="Viudo/a">Viudo/a</option>
-        </select>
-
-        <br>
-        <br>
-
-        <div>
-            <label for="Newsletter">¿Desea recibir el Newsletter</label>
+          <div>
+            <label for="Newsletter" class="mb-3">¿Desea recibir el Newsletter</label>
             <input type="checkbox" name="Newsletter" id="acepto">
-        </div>
-        <br>
-        <div>
-            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10">Comentarios</textarea>
-        </div>
+          </div>
+          <div>
+            <textarea class="col-12" name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder="Comentario"></textarea>
+          </div>
 
-        <input type="submit" value="Enviar Formulario">
-        <input type="reset" value="Limpiar Formulario">
+          <input type="submit" value="Enviar Formulario">
+          <input type="reset" value="Limpiar Formulario">
+        </div>
+        <div>
+          <img src="../img/imagecontact.png" alt="pageContacto">
+        </div>
 
     </form>
 

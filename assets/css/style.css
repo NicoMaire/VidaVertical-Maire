@@ -24,9 +24,18 @@ main ul{
 
 footer{
     background-color: rgba(127, 255, 212, 0.681);
+    padding: 0 5px;
 }
 
 .fa-brands{
     font-size: 50px;
     margin: 10px;
     }
+
+.listaPreguntas{
+    list-style: none;
+    }
+
+.parrafo{
+    text-align: justify;
+}
