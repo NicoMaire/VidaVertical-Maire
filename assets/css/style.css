@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.listado-futer{
+    margin-top: -90px;
+    list-style: none;
+}
+
+.listado-futer1 , .listado-futer2{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.lista-nosotros{
+    list-style: none;
+    
+}
+
+main ul{
+    padding-left: 0px;
+}
+
+footer{
+    background-color: rgba(127, 255, 212, 0.681);
+}
+
+.fa-brands{
+    font-size: 50px;
+    margin: 10px;
+    }
